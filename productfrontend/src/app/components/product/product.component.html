@@ -1,0 +1,23 @@
+<div class="container">
+
+    <table class='collapsetable'>
+        <thead>
+            <tr>
+                <th>Sku Number</th>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>In Stock</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let pro of products">
+            <td>{{pro.sku}}</td>
+            <td>{{pro.name}}</td>
+            <td><a href="{{pro.imageurl}}">{{pro.name}}</a></td>
+            <td>{{pro.description}}</td>
+            <td>{{pro.unitprice}}</td>
+            <td>{{pro.unitsinstock}}</td>
+        </tr>
+        </table>
+    </div>
