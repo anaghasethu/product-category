@@ -14,7 +14,8 @@
         <tr *ngFor="let pro of products">
             <td>{{pro.sku}}</td>
             <td>{{pro.name}}</td>
-            <td><a href="{{pro.imageurl}}">{{pro.name}}</a></td>
+<!--             <td><a href="{{pro.imageurl}}">{{pro.name}}</a></td> -->
+            <td><img [src]="pro.imageurl" alt="" srcset=""></td>
             <td>{{pro.description}}</td>
             <td>{{pro.unitprice}}</td>
             <td>{{pro.unitsinstock}}</td>
